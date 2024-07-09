@@ -1,3 +1,5 @@
+//mail: danielcohen1717@gmail.com
+
 #include "Board.hpp"
 #include <iostream>
 #include <stdexcept>

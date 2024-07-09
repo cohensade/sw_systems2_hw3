@@ -1,4 +1,4 @@
-
+//mail: danielcohen1717@gmail.com
 #ifndef VERTEX_HPP
 #define VERTEX_HPP
 

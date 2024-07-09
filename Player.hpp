@@ -1,3 +1,4 @@
+//mail: danielcohen1717@gmail.com
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
 

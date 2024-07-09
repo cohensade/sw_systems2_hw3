@@ -1,3 +1,5 @@
+//mail: danielcohen1717@gmail.com
+
 #ifndef CATAN_HPP
 #define CATAN_HPP
 

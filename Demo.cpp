@@ -1,3 +1,5 @@
+//mail: danielcohen1717@gmail.com
+
 #include <iostream>
 #include <stdexcept>
 #include <vector>

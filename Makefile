@@ -1,3 +1,5 @@
+# mail: danielcohen1717@gmail.com
+
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic
 

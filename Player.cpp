@@ -1,3 +1,4 @@
+//mail: danielcohen1717@gmail.com
 #include "Player.hpp"
 #include "Catan.hpp"
 #include <iostream>

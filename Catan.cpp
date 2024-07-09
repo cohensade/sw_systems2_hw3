@@ -1,3 +1,5 @@
+//mail: danielcohen1717@gmail.com
+
 #include "Catan.hpp"
 #include <algorithm>
 #include <random>

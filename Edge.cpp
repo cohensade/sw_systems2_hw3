@@ -1,4 +1,4 @@
-
+//mail: danielcohen1717@gmail.com
 #include "Edge.hpp"
 
 //to create edge we need its id and its 2 vertices

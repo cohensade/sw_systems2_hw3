@@ -1,5 +1,4 @@
-
-
+//mail: danielcohen1717@gmail.com
 #include "Vertex.hpp"
 #include "Player.hpp"
 

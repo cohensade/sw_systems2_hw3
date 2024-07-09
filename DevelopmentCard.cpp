@@ -1,3 +1,4 @@
+//mail: danielcohen1717@gmail.com
 #include "DevelopmentCard.hpp"
 
 // Define static members

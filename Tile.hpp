@@ -1,3 +1,4 @@
+//mail: danielcohen1717@gmail.com
 #ifndef TILE_HPP
 #define TILE_HPP
 
