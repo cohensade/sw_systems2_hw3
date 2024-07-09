@@ -45,7 +45,79 @@ To compile and run the game, follow these steps:
     ```
 
 ### Example Output
-The demo will simulate one round of the game, showcasing various functionalities and interactions between players.
+The demo will simulate one round of the game.
+
+## Detailed File Descriptions
+
+### Board.hpp
+- Manages the game board, including initialization of tiles, vertices, and edges.
+- Functions include:
+  - `initializeBoard()`: Initializes the board with tiles, vertices, and edges.
+  - `getEdges()`: Retrieves the edges on the board.
+  - `getVertices()`: Retrieves the vertices on the board.
+  - `getTiles()`: Retrieves the tiles on the board.
+
+### Catan.hpp
+- Manages the overall game state, including players and the board.
+- Functions include:
+  - `Catan(std::vector<Player*>& players)`: Constructor to initialize the game with players.
+  - `getBoard()`: Retrieves the game board.
+  
+  
+
+### DevelopmentCard.hpp
+- Represents development cards in the game.
+- Functions include:
+  - `DevelopmentCard(const std::string& type)`: Constructor to initialize a development card with a type.
+  - `getType()`: Retrieves the type of the development card.
+
+### Edge.hpp
+- Represents edges on the game board where players can build roads.
+- Functions include:
+  - `Edge(int id, Vertex* vertex1, Vertex* vertex2)`: Constructor to initialize an edge with an ID and connected vertices.
+  - `getId()`: Retrieves the ID of the edge.
+  - `getVertex1()`: Retrieves the first vertex connected to the edge.
+  - `getVertex2()`: Retrieves the second vertex connected to the edge.
+  - `getIsTaken()`: Checks if the edge is taken.
+  - `getOwner()`: Retrieves the owner of the edge.
+  - `setOwner(Player* player)`: Sets the owner of the edge.
+
+### Player.hpp
+- Represents a player in the game.
+- Functions include:
+  - `Player(const std::string& playerName)`: Constructor to initialize a player with a name.
+  - `getName()`: Retrieves the name of the player.
+  - `addResource(const std::string& resource, int amount)`: Adds resources to the player's inventory.
+  - `removeResource(const std::string& resource, int amount)`: Removes resources from the player's inventory.
+  - `getResources()`: Retrieves the player's resources.
+  - `buildSettlement(Vertex* vertex)`: Builds a settlement at the given vertex.
+  - `buildRoad(Edge* edge)`: Builds a road at the given edge.
+  - `buyDevelopmentCard()`: Buys a development card for the player.
+
+### Tile.hpp
+- Represents resource tiles on the game board.
+- Functions include:
+  - `Tile(int id, const std::string& type, int number)`: Constructor to initialize a tile with an ID, type, and number.
+  - `getId()`: Retrieves the ID of the tile.
+  - `getType()`: Retrieves the type of the tile.
+  - `getNumber()`: Retrieves the number of the tile.
+  - `addVertex(Vertex* vertex)`: Adds a vertex to the tile.
+  - `getVertices()`: Retrieves the vertices associated with the tile.
+
+### Vertex.hpp
+- Represents vertices on the game board where players can build settlements and cities.
+- Functions include:
+  - `Vertex(int id)`: Constructor to initialize a vertex with an ID.
+  - `getId()`: Retrieves the ID of the vertex.
+  - `getOwner()`: Retrieves the owner of the vertex.
+  - `setOwner(Player* player)`: Sets the owner of the vertex.
+  - `addAdjacentTile(Tile* tile)`: Adds an adjacent tile to the vertex.
+  - `getAdjacentTiles()`: Retrieves the adjacent tiles of the vertex.
+  - `addAdjacentVertex(Vertex* vertex)`: Adds an adjacent vertex.
+  - `getAdjacentVertices()`: Retrieves the adjacent vertices.
+  - `isNighbor(Vertex& vertex)`: Checks if the given vertex is adjacent.
+  - `addEdge(Edge* edge)`: Adds an edge to the vertex.
+  - `getEdges()`: Retrieves the edges associated with the vertex.
 
 ## Detailed File Descriptions
 
